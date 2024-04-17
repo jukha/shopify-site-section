@@ -1,14 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+.feature-slider {
   font-family: "Poppins", sans-serif;
 }
 
-.container-xxl {
+.feature-slider .container-xxl {
   max-width: 1440px;
 }
 
@@ -70,7 +64,7 @@ body {
   padding-bottom: 16px;
 }
 
-.slide-menu-header::after {
+.feature-slider .slide-menu-header::after {
   transition: all 300ms ease-in-out;
   content: "";
   width: 123px;
@@ -90,20 +84,20 @@ body {
 }
 
 /* Active Slide (For Hover) */
-.activeSlider .slide-menu-header::after {
+.feature-slider .activeSlider .slide-menu-header::after {
   opacity: 1;
 }
 
-.activeSlider .swiper-button-next,
-.activeSlider .swiper-button-prev {
+.feature-slider .activeSlider .swiper-button-next,
+.feature-slider .activeSlider .swiper-button-prev {
   opacity: 1;
 }
 
-.bg-highlight {
+.feature-slider .bg-highlight {
   background-color: #fff4ec !important;
 }
 
-.active-element {
+.feature-slider .active-element {
   position: absolute;
   width: 50%;
   height: 100%;
@@ -113,27 +107,27 @@ body {
   transition: all 300ms ease-in-out;
 }
 
-.left.active-element {
+.feature-slider .left.active-element {
   left: 0;
   border-right: 1px dashed rgb(60, 66, 46);
 }
 
-.right.active-element {
+.feature-slider .right.active-element {
   right: 0;
 }
 
 /* ============================= */
 /* Swiper related */
 /* ============================= */
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after,
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
+.feature-slider .swiper-button-prev:after,
+.feature-slider .swiper-rtl .swiper-button-next:after,
+.feature-slider .swiper-button-next:after,
+.feature-slider .swiper-rtl .swiper-button-prev:after {
   content: "";
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.feature-slider .swiper-button-next,
+.feature-slider .swiper-button-prev {
   top: 40%;
   color: rgb(60, 66, 46);
   border: 1px solid rgb(60, 66, 46);
@@ -145,18 +139,18 @@ body {
   display: none;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
+.feature-slider .swiper-button-next:hover,
+.feature-slider .swiper-button-prev:hover {
   background-color: #3c422e;
 }
 
-.swiper-button-next:hover svg,
-.swiper-button-prev:hover svg {
+.feature-slider .swiper-button-next:hover svg,
+.feature-slider .swiper-button-prev:hover svg {
   color: #fff;
 }
 
-.swiper-button-next svg,
-.swiper-button-prev svg {
+.feature-slider .swiper-button-next svg,
+.feature-slider .swiper-button-prev svg {
   width: 19px;
   height: 8px;
   transition: all 300ms ease-in-out;
@@ -216,30 +210,30 @@ body {
 /* ============================= */
 
 @media (min-width: 1199px) {
-  .nav.nav-tabs {
+  .feature-slider .nav.nav-tabs {
     display: none;
   }
 
-  .tab-content {
+  .feature-slider .tab-content {
     display: flex;
   }
 
-  .tab-content > .tab-pane {
+  .feature-slider .tab-content > .tab-pane {
     display: block;
     width: 50%;
     position: relative;
   }
 
-  .fade:not(.show) {
+  .feature-slider .fade:not(.show) {
     opacity: 1;
   }
 
-  .active-element {
+  .feature-slider .active-element {
     display: block;
   }
 
-  .swiper-button-next,
-  .swiper-button-prev {
+  .feature-slider .swiper-button-next,
+  .feature-slider .swiper-button-prev {
     display: flex;
   }
 
@@ -263,11 +257,11 @@ body {
 }
 
 @media (min-width: 1300px) {
-  .swiper-button-prev {
+  .feature-slider .swiper-button-prev {
     left: 30px;
   }
 
-  .swiper-button-next {
+  .feature-slider .swiper-button-next {
     right: 30px;
   }
 }

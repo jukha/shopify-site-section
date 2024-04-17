@@ -1,6 +1,6 @@
 const leftSwiper = new Swiper("#swiper-left", {
   loop: true,
-  speed: 1000,
+  // speed: 1000,
   slidesPerView: 1.25,
   spaceBetween: 10,
   centeredSlides: true,
@@ -38,14 +38,13 @@ const leftSwiper = new Swiper("#swiper-left", {
       setTimeout(() => {
         activeSlide.querySelector("img").style.opacity = "1";
         activeSlide.querySelector(".slider-text").style.opacity = "1";
-      }, 1000);
+      }, 400);
     },
   },
 });
 
 const rightSwiper = new Swiper("#swiper-right", {
   loop: true,
-  speed: 1000,
   slidesPerView: 1.25,
   spaceBetween: 10,
   centeredSlides: true,
@@ -84,7 +83,7 @@ const rightSwiper = new Swiper("#swiper-right", {
       setTimeout(() => {
         activeSlide.querySelector("img").style.opacity = "1";
         activeSlide.querySelector(".slider-text").style.opacity = "1";
-      }, 1000);
+      }, 400);
     },
   },
 });
