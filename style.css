@@ -8,6 +8,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container-xxl {
+  max-width: 1440px;
+}
+
 .feature-slider {
   background-color: #f6e6d9;
   border-top: 1px solid rgb(60, 66, 46);
@@ -32,12 +36,18 @@ body {
   justify-content: center;
 }
 
+.feature-slider .slider-text {
+  transition: all 300ms ease-in-out;
+}
+
 .feature-slider .slide-img img {
   border-radius: 20px;
   max-width: 420px;
   width: 100%;
   object-fit: cover;
   max-height: 370px;
+  /* opacity: 0.3; */
+  transition: all 0.3s ease-in-out;
 }
 
 .feature-slider .slide-header {
@@ -105,14 +115,16 @@ body {
 
 .left.active-element {
   left: 0;
+  border-right: 1px dashed rgb(60, 66, 46);
 }
 
 .right.active-element {
   right: 0;
 }
 
+/* ============================= */
 /* Swiper related */
-
+/* ============================= */
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after,
 .swiper-button-next:after,
@@ -147,4 +159,18 @@ body {
   width: 19px;
   height: 8px;
   transition: all 300ms ease-in-out;
+}
+
+/* ============================= */
+/* Media Queries */
+/* ============================= */
+
+@media (min-width: 1300px) {
+  .swiper-button-prev {
+    left: 30px;
+  }
+
+  .swiper-button-next {
+    right: 30px;
+  }
 }

@@ -1,10 +1,46 @@
-const swiper = new Swiper(".swiper", {
+const leftSwiper = new Swiper("#swiper-left", {
   loop: true,
-
-  // Navigation arrows
+  speed: 1000,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".slider-outer-wrapper.left .swiper-button-next",
+    prevEl: ".slider-outer-wrapper.left .swiper-button-prev",
+  },
+  on: {
+    slideChange: function () {
+      const activeSlide = this.slides[this.activeIndex];
+      this.slides.forEach(function (slide) {
+        slide.querySelector("img").style.opacity = "0.3";
+        slide.querySelector(".slider-text").style.opacity = "0";
+      });
+
+      setTimeout(() => {
+        activeSlide.querySelector("img").style.opacity = "1";
+        activeSlide.querySelector(".slider-text").style.opacity = "1";
+      }, 1000);
+    },
+  },
+});
+
+const rightSwiper = new Swiper("#swiper-right", {
+  loop: true,
+  speed: 1000,
+  navigation: {
+    nextEl: ".slider-outer-wrapper.right .swiper-button-next",
+    prevEl: ".slider-outer-wrapper.right .swiper-button-prev",
+  },
+  on: {
+    slideChange: function () {
+      const activeSlide = this.slides[this.activeIndex];
+      this.slides.forEach(function (slide) {
+        slide.querySelector("img").style.opacity = "0.3";
+        slide.querySelector(".slider-text").style.opacity = "0";
+      });
+
+      setTimeout(() => {
+        activeSlide.querySelector("img").style.opacity = "1";
+        activeSlide.querySelector(".slider-text").style.opacity = "1";
+      }, 1000);
+    },
   },
 });
 
