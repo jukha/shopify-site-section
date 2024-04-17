@@ -33,148 +33,222 @@
       <div class="container-xxl">
         <h3 class="section-header">
           <i>Fun things to do with</i>
-          “Drizzle” & “Sizzle”
+          <span class="desktop-text">“Drizzle” & “Sizzle”</span>
         </h3>
-        <div class="desktop-version d-flex">
-          <!-- 01) Left -->
-          <div class="slider-outer-wrapper left activeSlider">
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev">
-              <svg
-                width="19"
-                height="8"
-                viewBox="0 0 19 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.5805 8.00004L13.7005 7.84004C13.5538 7.41337 13.3671 6.97337 13.1405 6.52004C12.9005 6.06671 12.6471 5.64004 12.3805 5.24004C12.1005 4.84004 11.8338 4.50671 11.5805 4.24004L18.9805 4.68004V3.32004L11.5805 3.80004C11.8471 3.52004 12.1205 3.18004 12.4005 2.78004C12.6805 2.36671 12.9338 1.93337 13.1605 1.48004C13.3871 1.02671 13.5671 0.600039 13.7005 0.200039L13.5805 0.0400391C12.9938 0.400039 12.2805 0.760039 11.4405 1.12004C10.6005 1.48004 9.70714 1.82004 8.76047 2.14004C7.80047 2.46004 6.84047 2.75337 5.88047 3.02004C4.92047 3.27337 4.0138 3.48671 3.16047 3.66004C2.2938 3.82004 1.54047 3.92004 0.900469 3.96004V4.04004C1.52714 4.08004 2.26713 4.18671 3.12047 4.36004C3.96047 4.52004 4.86047 4.73337 5.82047 5.00004C6.78047 5.25337 7.74047 5.54671 8.70047 5.88004C9.64714 6.20004 10.5471 6.54004 11.4005 6.90004C12.2405 7.26004 12.9671 7.62671 13.5805 8.00004Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <div class="swiper-button-next">
-              <svg
-                width="19"
-                height="8"
-                viewBox="0 0 19 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.41953 8.00004L5.29953 7.84004C5.4462 7.41337 5.63286 6.97337 5.85953 6.52004C6.09953 6.06671 6.35287 5.64004 6.61953 5.24004C6.89953 4.84004 7.1662 4.50671 7.41953 4.24004L0.0195313 4.68004L0.0195313 3.32004L7.41953 3.80004C7.15287 3.52004 6.87953 3.18004 6.59953 2.78004C6.31953 2.36671 6.0662 1.93337 5.83953 1.48004C5.61286 1.02671 5.43287 0.600039 5.29953 0.200039L5.41953 0.0400391C6.0062 0.400039 6.71953 0.760039 7.55953 1.12004C8.39953 1.48004 9.29286 1.82004 10.2395 2.14004C11.1995 2.46004 12.1595 2.75337 13.1195 3.02004C14.0795 3.27337 14.9862 3.48671 15.8395 3.66004C16.7062 3.82004 17.4595 3.92004 18.0995 3.96004V4.04004C17.4729 4.08004 16.7329 4.18671 15.8795 4.36004C15.0395 4.52004 14.1395 4.73337 13.1795 5.00004C12.2195 5.25337 11.2595 5.54671 10.2995 5.88004C9.35286 6.20004 8.45287 6.54004 7.59953 6.90004C6.75953 7.26004 6.03286 7.62671 5.41953 8.00004Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <!-- Slider main container -->
-            <div class="swiper" id="swiper-left">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <!-- 01 -->
-                <div class="swiper-slide">
-                  <div class="slide-img">
-                    <img class="img-fluid" src="img/Labneh_900x.webp" alt="" />
+        <!-- Mobile Tabs Start -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="drizzle-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#drizzle-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="drizzle-tab-pane"
+              aria-selected="true"
+            >
+              "Drizzle"
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="sizzle-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#sizzle-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="sizzle-tab-pane"
+              aria-selected="false"
+            >
+              "Sizzle"
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="drizzle-tab-pane"
+            role="tabpanel"
+            aria-labelledby="drizzle-tab"
+            tabindex="0"
+          >
+            <!-- 01) Left -->
+            <div class="slider-outer-wrapper left activeSlider">
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <svg
+                  width="19"
+                  height="8"
+                  viewBox="0 0 19 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5805 8.00004L13.7005 7.84004C13.5538 7.41337 13.3671 6.97337 13.1405 6.52004C12.9005 6.06671 12.6471 5.64004 12.3805 5.24004C12.1005 4.84004 11.8338 4.50671 11.5805 4.24004L18.9805 4.68004V3.32004L11.5805 3.80004C11.8471 3.52004 12.1205 3.18004 12.4005 2.78004C12.6805 2.36671 12.9338 1.93337 13.1605 1.48004C13.3871 1.02671 13.5671 0.600039 13.7005 0.200039L13.5805 0.0400391C12.9938 0.400039 12.2805 0.760039 11.4405 1.12004C10.6005 1.48004 9.70714 1.82004 8.76047 2.14004C7.80047 2.46004 6.84047 2.75337 5.88047 3.02004C4.92047 3.27337 4.0138 3.48671 3.16047 3.66004C2.2938 3.82004 1.54047 3.92004 0.900469 3.96004V4.04004C1.52714 4.08004 2.26713 4.18671 3.12047 4.36004C3.96047 4.52004 4.86047 4.73337 5.82047 5.00004C6.78047 5.25337 7.74047 5.54671 8.70047 5.88004C9.64714 6.20004 10.5471 6.54004 11.4005 6.90004C12.2405 7.26004 12.9671 7.62671 13.5805 8.00004Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  width="19"
+                  height="8"
+                  viewBox="0 0 19 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.41953 8.00004L5.29953 7.84004C5.4462 7.41337 5.63286 6.97337 5.85953 6.52004C6.09953 6.06671 6.35287 5.64004 6.61953 5.24004C6.89953 4.84004 7.1662 4.50671 7.41953 4.24004L0.0195313 4.68004L0.0195313 3.32004L7.41953 3.80004C7.15287 3.52004 6.87953 3.18004 6.59953 2.78004C6.31953 2.36671 6.0662 1.93337 5.83953 1.48004C5.61286 1.02671 5.43287 0.600039 5.29953 0.200039L5.41953 0.0400391C6.0062 0.400039 6.71953 0.760039 7.55953 1.12004C8.39953 1.48004 9.29286 1.82004 10.2395 2.14004C11.1995 2.46004 12.1595 2.75337 13.1195 3.02004C14.0795 3.27337 14.9862 3.48671 15.8395 3.66004C16.7062 3.82004 17.4595 3.92004 18.0995 3.96004V4.04004C17.4729 4.08004 16.7329 4.18671 15.8795 4.36004C15.0395 4.52004 14.1395 4.73337 13.1795 5.00004C12.2195 5.25337 11.2595 5.54671 10.2995 5.88004C9.35286 6.20004 8.45287 6.54004 7.59953 6.90004C6.75953 7.26004 6.03286 7.62671 5.41953 8.00004Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <!-- Slider main container -->
+              <div class="swiper" id="swiper-left">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <!-- 01 -->
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        class="img-fluid"
+                        src="img/Labneh_900x.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider-text">
+                      <h4 class="slide-header">Drizzle on</h4>
+                      <h3 class="slide-menu-header">Labneb</h3>
+                    </div>
                   </div>
-                  <div class="slider-text">
-                    <h4 class="slide-header">Drizzle on</h4>
-                    <h3 class="slide-menu-header">Labneb</h3>
+                  <!-- 02 -->
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        class="img-fluid"
+                        src="img/Labneh_900x.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider-text">
+                      <h4 class="slide-header">Drizzle on</h4>
+                      <h3 class="slide-menu-header">Labneb</h3>
+                    </div>
                   </div>
-                </div>
-                <!-- 02 -->
-                <div class="swiper-slide">
-                  <div class="slide-img">
-                    <img class="img-fluid" src="img/Labneh_900x.webp" alt="" />
-                  </div>
-                  <div class="slider-text">
-                    <h4 class="slide-header">Drizzle on</h4>
-                    <h3 class="slide-menu-header">Labneb</h3>
-                  </div>
-                </div>
-                <!-- 03 -->
-                <div class="swiper-slide">
-                  <div class="slide-img">
-                    <img class="img-fluid" src="img/Labneh_900x.webp" alt="" />
-                  </div>
-                  <div class="slider-text">
-                    <h4 class="slide-header">Drizzle on</h4>
-                    <h3 class="slide-menu-header">Labneb</h3>
+                  <!-- 03 -->
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        class="img-fluid"
+                        src="img/Labneh_900x.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider-text">
+                      <h4 class="slide-header">Drizzle on</h4>
+                      <h3 class="slide-menu-header">Labneb</h3>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination-left"></div>
             </div>
           </div>
-          <!-- 02) Right -->
-          <div class="slider-outer-wrapper right">
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev">
-              <svg
-                width="19"
-                height="8"
-                viewBox="0 0 19 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.5805 8.00004L13.7005 7.84004C13.5538 7.41337 13.3671 6.97337 13.1405 6.52004C12.9005 6.06671 12.6471 5.64004 12.3805 5.24004C12.1005 4.84004 11.8338 4.50671 11.5805 4.24004L18.9805 4.68004V3.32004L11.5805 3.80004C11.8471 3.52004 12.1205 3.18004 12.4005 2.78004C12.6805 2.36671 12.9338 1.93337 13.1605 1.48004C13.3871 1.02671 13.5671 0.600039 13.7005 0.200039L13.5805 0.0400391C12.9938 0.400039 12.2805 0.760039 11.4405 1.12004C10.6005 1.48004 9.70714 1.82004 8.76047 2.14004C7.80047 2.46004 6.84047 2.75337 5.88047 3.02004C4.92047 3.27337 4.0138 3.48671 3.16047 3.66004C2.2938 3.82004 1.54047 3.92004 0.900469 3.96004V4.04004C1.52714 4.08004 2.26713 4.18671 3.12047 4.36004C3.96047 4.52004 4.86047 4.73337 5.82047 5.00004C6.78047 5.25337 7.74047 5.54671 8.70047 5.88004C9.64714 6.20004 10.5471 6.54004 11.4005 6.90004C12.2405 7.26004 12.9671 7.62671 13.5805 8.00004Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <div class="swiper-button-next">
-              <svg
-                width="19"
-                height="8"
-                viewBox="0 0 19 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.41953 8.00004L5.29953 7.84004C5.4462 7.41337 5.63286 6.97337 5.85953 6.52004C6.09953 6.06671 6.35287 5.64004 6.61953 5.24004C6.89953 4.84004 7.1662 4.50671 7.41953 4.24004L0.0195313 4.68004L0.0195313 3.32004L7.41953 3.80004C7.15287 3.52004 6.87953 3.18004 6.59953 2.78004C6.31953 2.36671 6.0662 1.93337 5.83953 1.48004C5.61286 1.02671 5.43287 0.600039 5.29953 0.200039L5.41953 0.0400391C6.0062 0.400039 6.71953 0.760039 7.55953 1.12004C8.39953 1.48004 9.29286 1.82004 10.2395 2.14004C11.1995 2.46004 12.1595 2.75337 13.1195 3.02004C14.0795 3.27337 14.9862 3.48671 15.8395 3.66004C16.7062 3.82004 17.4595 3.92004 18.0995 3.96004V4.04004C17.4729 4.08004 16.7329 4.18671 15.8795 4.36004C15.0395 4.52004 14.1395 4.73337 13.1795 5.00004C12.2195 5.25337 11.2595 5.54671 10.2995 5.88004C9.35286 6.20004 8.45287 6.54004 7.59953 6.90004C6.75953 7.26004 6.03286 7.62671 5.41953 8.00004Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <!-- Slider main container -->
-            <div class="swiper" id="swiper-right">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <!-- 01 -->
-                <div class="swiper-slide">
-                  <div class="slide-img">
-                    <img class="img-fluid" src="img/Labneh_900x.webp" alt="" />
+          <div
+            class="tab-pane fade"
+            id="sizzle-tab-pane"
+            role="tabpanel"
+            aria-labelledby="sizzle-tab"
+            tabindex="0"
+          >
+            <!-- 02) Right -->
+            <div class="slider-outer-wrapper right">
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <svg
+                  width="19"
+                  height="8"
+                  viewBox="0 0 19 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5805 8.00004L13.7005 7.84004C13.5538 7.41337 13.3671 6.97337 13.1405 6.52004C12.9005 6.06671 12.6471 5.64004 12.3805 5.24004C12.1005 4.84004 11.8338 4.50671 11.5805 4.24004L18.9805 4.68004V3.32004L11.5805 3.80004C11.8471 3.52004 12.1205 3.18004 12.4005 2.78004C12.6805 2.36671 12.9338 1.93337 13.1605 1.48004C13.3871 1.02671 13.5671 0.600039 13.7005 0.200039L13.5805 0.0400391C12.9938 0.400039 12.2805 0.760039 11.4405 1.12004C10.6005 1.48004 9.70714 1.82004 8.76047 2.14004C7.80047 2.46004 6.84047 2.75337 5.88047 3.02004C4.92047 3.27337 4.0138 3.48671 3.16047 3.66004C2.2938 3.82004 1.54047 3.92004 0.900469 3.96004V4.04004C1.52714 4.08004 2.26713 4.18671 3.12047 4.36004C3.96047 4.52004 4.86047 4.73337 5.82047 5.00004C6.78047 5.25337 7.74047 5.54671 8.70047 5.88004C9.64714 6.20004 10.5471 6.54004 11.4005 6.90004C12.2405 7.26004 12.9671 7.62671 13.5805 8.00004Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  width="19"
+                  height="8"
+                  viewBox="0 0 19 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.41953 8.00004L5.29953 7.84004C5.4462 7.41337 5.63286 6.97337 5.85953 6.52004C6.09953 6.06671 6.35287 5.64004 6.61953 5.24004C6.89953 4.84004 7.1662 4.50671 7.41953 4.24004L0.0195313 4.68004L0.0195313 3.32004L7.41953 3.80004C7.15287 3.52004 6.87953 3.18004 6.59953 2.78004C6.31953 2.36671 6.0662 1.93337 5.83953 1.48004C5.61286 1.02671 5.43287 0.600039 5.29953 0.200039L5.41953 0.0400391C6.0062 0.400039 6.71953 0.760039 7.55953 1.12004C8.39953 1.48004 9.29286 1.82004 10.2395 2.14004C11.1995 2.46004 12.1595 2.75337 13.1195 3.02004C14.0795 3.27337 14.9862 3.48671 15.8395 3.66004C16.7062 3.82004 17.4595 3.92004 18.0995 3.96004V4.04004C17.4729 4.08004 16.7329 4.18671 15.8795 4.36004C15.0395 4.52004 14.1395 4.73337 13.1795 5.00004C12.2195 5.25337 11.2595 5.54671 10.2995 5.88004C9.35286 6.20004 8.45287 6.54004 7.59953 6.90004C6.75953 7.26004 6.03286 7.62671 5.41953 8.00004Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <!-- Slider main container -->
+              <div class="swiper" id="swiper-right">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <!-- 01 -->
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        class="img-fluid"
+                        src="img/Labneh_900x.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider-text">
+                      <h4 class="slide-header">Drizzle on</h4>
+                      <h3 class="slide-menu-header">Labneb</h3>
+                    </div>
                   </div>
-                  <div class="slider-text">
-                    <h4 class="slide-header">Drizzle on</h4>
-                    <h3 class="slide-menu-header">Labneb</h3>
+                  <!-- 02 -->
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        class="img-fluid"
+                        src="img/Labneh_900x.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider-text">
+                      <h4 class="slide-header">Drizzle on</h4>
+                      <h3 class="slide-menu-header">Labneb</h3>
+                    </div>
                   </div>
-                </div>
-                <!-- 02 -->
-                <div class="swiper-slide">
-                  <div class="slide-img">
-                    <img class="img-fluid" src="img/Labneh_900x.webp" alt="" />
-                  </div>
-                  <div class="slider-text">
-                    <h4 class="slide-header">Drizzle on</h4>
-                    <h3 class="slide-menu-header">Labneb</h3>
-                  </div>
-                </div>
-                <!-- 03 -->
-                <div class="swiper-slide">
-                  <div class="slide-img">
-                    <img class="img-fluid" src="img/Labneh_900x.webp" alt="" />
-                  </div>
-                  <div class="slider-text">
-                    <h4 class="slide-header">Drizzle on</h4>
-                    <h3 class="slide-menu-header">Labneb</h3>
+                  <!-- 03 -->
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                      <img
+                        class="img-fluid"
+                        src="img/Labneh_900x.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider-text">
+                      <h4 class="slide-header">Drizzle on</h4>
+                      <h3 class="slide-menu-header">Labneb</h3>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination-right"></div>
             </div>
           </div>
         </div>
+        <!-- Mobile Tabs End -->
       </div>
     </section>
     <!-- Boostrap JS -->
@@ -183,8 +257,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- Custom JS -->
     <script src="script.js"></script>
   </body>

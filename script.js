@@ -1,10 +1,32 @@
 const leftSwiper = new Swiper("#swiper-left", {
   loop: true,
   speed: 1000,
+  slidesPerView: 1.25,
+  spaceBetween: 10,
+  centeredSlides: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    },
+
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+
+    1199: {
+      slidesPerView: 1,
+    },
+  },
   navigation: {
     nextEl: ".slider-outer-wrapper.left .swiper-button-next",
     prevEl: ".slider-outer-wrapper.left .swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination-left",
+  },
+
   on: {
     slideChange: function () {
       const activeSlide = this.slides[this.activeIndex];
@@ -24,10 +46,33 @@ const leftSwiper = new Swiper("#swiper-left", {
 const rightSwiper = new Swiper("#swiper-right", {
   loop: true,
   speed: 1000,
+  slidesPerView: 1.25,
+  spaceBetween: 10,
+  centeredSlides: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    },
+
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+
+    1199: {
+      slidesPerView: 1,
+    },
+  },
   navigation: {
     nextEl: ".slider-outer-wrapper.right .swiper-button-next",
     prevEl: ".slider-outer-wrapper.right .swiper-button-prev",
   },
+
+  pagination: {
+    el: ".swiper-pagination-right",
+  },
+
   on: {
     slideChange: function () {
       const activeSlide = this.slides[this.activeIndex];
