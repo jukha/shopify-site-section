@@ -4,6 +4,8 @@
 
 .feature-slider .container-xxl {
   max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 16px;
 }
 
 .feature-slider {
@@ -21,6 +23,8 @@
   padding-top: 60px;
   text-align: center;
   margin-inline: auto;
+  margin-bottom: 0;
+  line-height: normal;
 }
 
 .feature-slider .slide-img {
@@ -47,7 +51,9 @@
 .feature-slider .slide-header {
   font-size: 16px;
   text-align: center;
+  margin: 0;
   margin-top: 16px;
+  font-weight: 500;
 }
 
 .feature-slider .slide-menu-header {
@@ -62,6 +68,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 16px;
+  margin: 0;
 }
 
 .feature-slider .slide-menu-header::after {
@@ -182,7 +189,12 @@
   overflow: hidden;
   max-width: max-content;
   margin-inline: auto;
+  margin-top: 8px;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
 }
 
 .feature-slider #drizzle-tab {
@@ -199,10 +211,29 @@
   border: none;
   color: #3c422e;
   font-size: 24px;
+  line-height: 36px;
+  padding: 8px 16px;
+  background: transparent;
 }
 
 .feature-slider .nav.nav-tabs .nav-link.active {
   background-color: #9eef80;
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
 }
 
 /* ============================= */
