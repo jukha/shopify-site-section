@@ -88,6 +88,15 @@ const rightSwiper = new Swiper("#swiper-right", {
   },
 });
 
+new Swiper("#about-product-slider .swiper", {
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: "#about-product-slider .next-btn",
+    prevEl: "#about-product-slider .prev-btn"
+  }
+});
+
 const desktopSliders = document.querySelectorAll(".slider-outer-wrapper");
 const leftActiveEl = document.querySelector(".active-element.left");
 const rightActiveEl = document.querySelector(".active-element.right");
